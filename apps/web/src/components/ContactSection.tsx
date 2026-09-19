@@ -21,12 +21,14 @@ const contactItems = [
   {
     icon: <PhoneIcon sx={{ fontSize: 20 }} />,
     label: "Call Us",
+    value: "+91 98765 43210",
     value: "+91 XXXXX XXXXX",
     sub: "Mon–Sat, 9am–7pm IST",
   },
   {
     icon: <WhatsAppIcon sx={{ fontSize: 20 }} />,
     label: "WhatsApp",
+    value: "+91 98765 43210",
     value: "+91 XXXXX XXXXX",
     sub: "Quickest response",
   },
@@ -39,6 +41,8 @@ const contactItems = [
   {
     icon: <LocationOnIcon sx={{ fontSize: 20 }} />,
     label: "Office",
+    value: "Jubilee Hills, Hyderabad",
+    sub: "Telangana – 500033",
     value: "Hyderabad, Telangana",
     sub: "India",
   },

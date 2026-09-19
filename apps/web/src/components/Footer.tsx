@@ -117,6 +117,9 @@ export default function Footer() {
 
             <Stack spacing={0.6} sx={{ mb: 3 }}>
               {[
+                "📍 Jubilee Hills, Hyderabad – 500033",
+                "📞 +91 98765 43210",
+                "✉️ hello@optraliving.com",
                 '📍 Hyderabad, Telangana, India',
                 '📞 +91 XXXXX XXXXX',
                 '✉️ hello@optraliving.com',
