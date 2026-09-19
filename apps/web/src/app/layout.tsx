@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import { theme } from './theme';
+import ThemeRegistry from './ThemeRegistry';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -33,7 +31,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Optra Living — Premium Property Management in Hyderabad',
-    description: 'Professional property letting & management. Verified tenants, transparent tracking, zero hassle.',
+    description:
+      'Professional property letting & management. Verified tenants, transparent tracking, zero hassle.',
     url: 'https://optraliving.com',
     siteName: 'Optra Living',
     locale: 'en_IN',
@@ -41,19 +40,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body>
         <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            <CssBaseline />
+          <ThemeRegistry>
             {children}
-          </ThemeProvider>
+          </ThemeRegistry>
         </AppRouterCacheProvider>
       </body>
     </html>
