@@ -163,7 +163,7 @@ export default function OwnerCTA() {
                 variant="outlined"
                 size="large"
                 startIcon={<WhatsAppIcon />}
-                href="https://wa.me/919876543210"
+                href="https://wa.me/91XXXXXXXXXX"
                 sx={{
                   fontWeight: 600,
                   px: 3,
