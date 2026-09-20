@@ -24,9 +24,6 @@ import CloseIcon from "@mui/icons-material/Close";
 import HomeWorkIcon from "@mui/icons-material/HomeWork";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
   { label: "Services", href: "/#services" },
   { label: "Plans", href: "/plans" },
   { label: "About", href: "/#about" },
