@@ -27,6 +27,10 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Plans", href: "/plans" },
+  { label: "About", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 function HideOnScroll({ children }: { children: React.ReactElement }) {
